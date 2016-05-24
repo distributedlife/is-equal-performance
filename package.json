@@ -1,0 +1,33 @@
+{
+  "name": "is-equal-performance",
+  "version": "1.0.0",
+  "description": "Testing the performance of different isEqual approaches",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/distributedlife/is-equal-performance.git"
+  },
+  "keywords": [
+    "performance",
+    "isEqual",
+    "equal",
+    "object"
+  ],
+  "author": "Ryan Boucher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/distributedlife/is-equal-performance/issues"
+  },
+  "homepage": "https://github.com/distributedlife/is-equal-performance#readme",
+  "devDependencies": {
+    "deep-equal": "^1.0.1",
+    "distributedlife-deep-equal": "file:///Users/distributedlife/projects/node-deep-equal",
+    "lodash": "^4.13.1"
+  },
+  "dependencies": {
+    "benchmark": "^2.1.0"
+  }
+}
