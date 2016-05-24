@@ -1,9 +1,4 @@
-
-> is-equal-performance@1.0.0 test /Users/distributedlife/projects/is-equal-performance
-> node index.js
-
-
-
+~~~shell
 Empty Object Test
 lodash x 47,200,624 ops/sec ±10.20% (66 runs sampled)
 underscore x 29,406,558 ops/sec ±3.27% (72 runs sampled)
@@ -46,3 +41,4 @@ Immutable.is x 3,662,961 ops/sec ±2.41% (80 runs sampled)
 stringify x 1.62 ops/sec ±5.72% (8 runs sampled)
 stringify-optomistic x 57.75 ops/sec ±6.04% (60 runs sampled)
 Fastest is lodash
+~~~
