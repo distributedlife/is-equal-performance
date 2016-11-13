@@ -1,4 +1,6 @@
-| Empty Object Test |
+
+Empty Object Test:
+
 | Library | Ops/Sec | Relative Margin of Error | # of Runs Sampled |
 | --- | --- | --- | --- |
 | lodash | 68,235,680 | ±0.77% | 90 | 
@@ -11,7 +13,8 @@
 | Fastest is lodash |
 
 
-| Small Object Test |
+Small Object Test:
+
 | Library | Ops/Sec | Relative Margin of Error | # of Runs Sampled |
 | --- | --- | --- | --- |
 | lodash | 67,306,856 | ±1.09% | 91 | 
@@ -24,7 +27,8 @@
 | Fastest is lodash |
 
 
-| Medium Object Test |
+Medium Object Test:
+
 | Library | Ops/Sec | Relative Margin of Error | # of Runs Sampled |
 | --- | --- | --- | --- |
 | lodash | 68,612,206 | ±0.68% | 89 | 
@@ -37,7 +41,8 @@
 | Fastest is lodash |
 
 
-| Large Object Test |
+Large Object Test:
+
 | Library | Ops/Sec | Relative Margin of Error | # of Runs Sampled |
 | --- | --- | --- | --- |
 | lodash | 68,028,067 | ±1.00% | 91 | 

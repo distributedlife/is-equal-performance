@@ -7,7 +7,7 @@ const Immutable = require('immutable');
 function newSuite (name) {
   return new Benchmark.Suite(name, {
     onStart: () => {
-      console.log(`\n\n| ${name} |`);
+      console.log(`\n\n${name}:\n`);
       console.log('| Library | Ops/Sec | Relative Margin of Error | # of Runs Sampled |')
       console.log('| --- | --- | --- | --- |')
     },
