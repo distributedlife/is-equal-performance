@@ -6,12 +6,21 @@ const Immutable = require('immutable');
 
 function newSuite (name) {
   return new Benchmark.Suite(name, {
-    onStart: () => console.log(`\n\n${name}`),
-    onCycle: event => console.log(String(event.target)),
+    onStart: () => {
+      console.log(`\n\n| ${name} |`);
+      console.log('| Library | Ops/Sec | Relative Margin of Error | # of Runs Sampled |')
+      console.log('| --- | --- | --- | --- |')
+    },
+    onCycle: event => console.log(toMarkdownRow(event.target)),
+    // onCycle: event => console.log(String(event.target)),
     onComplete: function () {
-      console.log('Fastest is ' + this.filter('fastest').map('name'));
+      console.log('| Fastest is ' + this.filter('fastest').map('name') + ' |');
     }
   });
+}
+
+function toMarkdownRow(target) {
+  return '| ' + target.name + ' | ' + Benchmark.formatNumber(target.hz.toFixed(target.hz < 100 ? 2 : 0)) + ' | ±' + target.stats.rme.toFixed(2) + '% | ' + target.stats.sample.length +  ' | ';
 }
 
 const empty = newSuite('Empty Object Test');
